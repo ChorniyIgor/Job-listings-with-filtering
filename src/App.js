@@ -14,10 +14,13 @@ function App() {
   return (
     <>
       <TheHeader />
-      <div className="container">
-        <FilterPanel />
-        <JobList />
-      </div>
+      <main>
+        <div className="container">
+          <FilterPanel />
+          <JobList />
+        </div>
+      </main>
+      <footer> </footer>
     </>
   );
 }
