@@ -35,6 +35,7 @@ Users should be able to:
 - CSS custom properties
 - [React](https://reactjs.org/) - JS library
 - [Redux](https://redux.js.org/) - JS library
+- [Redux Toolkit](https://redux-toolkit.js.org/) - JS library
 
 ## Author
 
