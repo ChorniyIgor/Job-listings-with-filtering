@@ -1,6 +1,6 @@
 import { useSelector } from "react-redux";
-import { getFilters } from "store/filter/filterSelects";
-import { getFiltredJobs } from "store/jobs/jobsSelects";
+import { getFilters } from "../features/filter/filter-slice";
+import { getFiltredJobs } from "../features/filter/filter-slice";
 import { JobPosition } from "./JobPosition";
 
 const JobList = () => {

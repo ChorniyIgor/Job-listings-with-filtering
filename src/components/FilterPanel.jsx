@@ -2,9 +2,9 @@ import { Badge } from "UI/Badge";
 import { Card } from "UI/Card";
 import { Stack } from "UI/Stack";
 import { useSelector } from "react-redux";
-import { getFilters } from "store/filter/filterSelects";
+import { getFilters } from "../features/filter/filter-slice";
 import { useDispatch } from "react-redux";
-import { clearFilters, removeFilter } from "store/filter/filtersActions";
+import { clearFilters, removeFilter } from "../features/filter/filter-slice";
 
 const FilterPanel = () => {
   const filters = useSelector(getFilters);
@@ -15,7 +15,7 @@ const FilterPanel = () => {
   };
 
   const onClearBtnClickHandler = () => {
-    dispatch(clearFilters);
+    dispatch(clearFilters());
   };
 
   if (filters.length === 0) return null;
