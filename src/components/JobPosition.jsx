@@ -1,6 +1,6 @@
+import { addFilter } from "features/filter/filter-slice";
 import PropTypes from "prop-types";
 import { useDispatch } from "react-redux";
-import { addNewFilter } from "store/filter/filtersActions";
 import { Badge } from "UI/Badge";
 import { Card } from "UI/Card";
 import { Stack } from "UI/Stack";
@@ -24,7 +24,7 @@ const JobPosition = ({
   const dispatch = useDispatch();
 
   const onBadgeClickhandler = (filter) => {
-    dispatch(addNewFilter(filter));
+    dispatch(addFilter(filter));
   };
 
   return (
